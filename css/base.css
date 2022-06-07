@@ -369,6 +369,9 @@ fieldset {
 	margin: 0;
 	padding: 0;
 }
+.item-wrap img{
+	color: #000;
+}
 
 input[type="email"],
 input[type="number"],
@@ -484,11 +487,36 @@ textarea {
 	
 }
 
+.main-navigation li{
+	float: left;
+	margin-left: 40px;
+	position: relative;
+	bottom: 55px;
+	left: 80px;
+	font-size: 18px;
+}
+
 
 /**
  * small screens - (_grid.scss)
  * --------------------------------------------------------------- 
  */
+ @media screen and (max-width:1200px) {
+	.row .row {
+		margin-left: -18px;
+		margin-right: -18px;
+	}
+
+	[class*="col-"] {
+		padding: 0 18px;
+	}
+	.v{
+		width: 67%;
+	}
+
+
+}
+
 @media screen and (max-width:1024px) {
 	.row .row {
 		margin-left: -18px;
@@ -498,6 +526,15 @@ textarea {
 	[class*="col-"] {
 		padding: 0 18px;
 	}
+	.main-navigation li{
+		float: left;
+		margin-left: 20px;
+		position: relative;
+		bottom: 55px;
+		left: 20%;
+		font-size: 18px;
+	}
+
 
 }
 
@@ -547,6 +584,17 @@ textarea {
 	.tab-full {
 		width: 100%;
 	}
+	.v{
+		width: 34.5%;
+	}
+	.main-navigation li{
+		float: left;
+		margin-left: 20px;
+		position: relative;
+		bottom: 55px;
+		left: 80px;
+		font-size: 18px;
+	}
 
 }
 
@@ -584,7 +632,29 @@ textarea {
 	.mob-full {
 		width: 100%;
 	}
+	.v{
+		width: 30%;
+	}
+	.main-navigation li{
+		float: left;
+		margin-left: 13px;
+		position: relative;
+		bottom: 55px;
+		left: 1%;
+		font-size: 18px;
+	}
 
+
+}
+@media screen and (max-width:500px) {
+	.main-navigation li{
+		float: left;
+		margin-left: 13px;
+		position: relative;
+		bottom: 55px;
+		left: 1%;
+		font-size: 16px;
+	}
 }
 
 /**
@@ -612,6 +682,18 @@ textarea {
 		float: none;
 	}
 
+	.v{
+		width: 30%;
+	}
+	.main-navigation li{
+		float: left;
+		margin-left: 13px;
+		position: relative;
+		bottom: 55px;
+		left: 1%;
+		font-size: 13px;
+	}
+	
 }
 
 /** 

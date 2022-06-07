@@ -1085,6 +1085,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  */
 header {
 	position: fixed;
+	background: #000;
 	width: 100%;
 	min-height: 66px;
 	z-index: 600;
@@ -1094,15 +1095,14 @@ header .row {
 	min-height: 66px;
 }
 header .top-bar {
-	display: block;
+	display: inline-flexs;
 	background: #000000;
 	min-width: 220px;
 	min-height: 66px;
-	position: absolute;
 	left: 40px;
 	top: 0;
 }
-header .logo {
+/* header .logo {
 	float: left;
 	margin-left: 20px;
 	margin-right: 50px;
@@ -1121,7 +1121,7 @@ header .logo a {
 	height: 15px;
 	background: url("../images/mohamed.png") no-repeat center;
 	background-size: 95px ;
-}
+} */
 
 /**
  * menu toggle - (_layout.css)
@@ -1228,7 +1228,7 @@ header .logo a {
 }
 
 /* dropdown nav */
-.main-navigation {
+/* .main-navigation {
 	background: #000000;
 	padding: 24px 30px 42px;
 	margin: 0;
@@ -1236,7 +1236,7 @@ header .logo a {
 	height: auto;
 	clear: both;
 	display: none;
-}
+} */
 .main-navigation > li {
 	display: block;
 	height: auto;
@@ -1269,11 +1269,22 @@ header .logo a {
 	header .top-bar {
 		left: 60px;
 	}
+	.menu-toggle {
+		float: left;
+		width: 40px;
+		height: 40px;
+		margin-left: 20px;
+		margin-top: 13px;
+		display: block;
+		position: relative;
+	}
 }
 @media only screen and (max-width:768px) {
 	header .top-bar {
 		left: 50px;
 	}
+	
+	
 }
 @media only screen and (max-width:600px) {
 	header .top-bar {
@@ -1793,11 +1804,14 @@ header .logo a {
 	background: #FFFFFF;
 	padding-top: 12rem;
 	padding-bottom: 12rem;
+
 }
 #portfolio .folio-item {
 	padding: 0;
 	position: relative;
 	overflow: hidden;
+	margin-left: 25%;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 #portfolio .folio-item img {
 	vertical-align: middle;
@@ -1806,6 +1820,7 @@ header .logo a {
 	-webkit-transition: all 0.5s ease-in-out;
 	-ms-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
+	
 }
 
 #portfolio .overlay {
@@ -1903,6 +1918,7 @@ header .logo a {
 }
 .popup-modal img {
 	vertical-align: bottom;
+	box-shadow: rgba(180, 40, 40, 0.16) 0px 1px 4px;
 }
 .popup-modal .description-box {
 	padding: 1.8rem 3.6rem 3rem;
